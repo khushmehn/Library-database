@@ -24,7 +24,7 @@ class Library:
         self.lendDict.pop(book)
 
 if __name__ == '__main__':
-    harry = Library(['Python', 'Rich Daddy Poor Daddy', 'Harry Potter', 'C++ Basics', 'Algorithms by CLRS'], "CodeWithHarry")
+    sumit = Library(['Python', 'Rich Daddy Poor Daddy', 'Harry Potter', 'C++ Basics', 'Algorithms by CLRS'], "CodeWithHarry")
 
     while(True):
         print(f"Welcome to the {harry.name} library. Enter your choice to continue")
@@ -41,20 +41,20 @@ if __name__ == '__main__':
             user_choice = int(user_choice)
 
         if user_choice == 1:
-            harry.displayBooks()
+            sumit.displayBooks()
 
         elif user_choice == 2:
             book = input("Enter the name of the book you want to lend:")
             user = input("Enter your name")
-            harry.lendBook(user, book)
+            sumit.lendBook(user, book)
 
         elif user_choice == 3:
             book = input("Enter the name of the book you want to add:")
-            harry.addBook(book)
+            sumit.addBook(book)
 
         elif user_choice == 4:
             book = input("Enter the name of the book you want to return:")
-            harry.returnBook(book)
+            sumit.returnBook(book)
 
         else:
             print("Not a valid option")
